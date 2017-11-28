@@ -12,6 +12,7 @@
 		4AA40A0F1FCDE3DD00F2DD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA40A0E1FCDE3DD00F2DD7E /* Assets.xcassets */; };
 		4AA40A121FCDE3DD00F2DD7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA40A101FCDE3DD00F2DD7E /* Main.storyboard */; };
 		4AA40A1E1FCDE3DD00F2DD7E /* _00px_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A1D1FCDE3DD00F2DD7E /* _00px_SearchTests.swift */; };
+		9C83F6135698B5E1FBF9D8B5 /* Pods_500px_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19750737F91B2ADE35CFCEBA /* Pods_500px_Search.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19750737F91B2ADE35CFCEBA /* Pods_500px_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_500px_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C86E23CA17E138AE66B215 /* Pods-500px Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-500px Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-500px Search/Pods-500px Search.debug.xcconfig"; sourceTree = "<group>"; };
 		4AA40A071FCDE3DD00F2DD7E /* 500px Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "500px Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA40A0A1FCDE3DD00F2DD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA40A0C1FCDE3DD00F2DD7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		4AA40A191FCDE3DD00F2DD7E /* 500px SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "500px SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA40A1D1FCDE3DD00F2DD7E /* _00px_SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _00px_SearchTests.swift; sourceTree = "<group>"; };
 		4AA40A1F1FCDE3DD00F2DD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E09B14AB50F59B8AD42BF6E /* Pods-500px Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-500px Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-500px Search/Pods-500px Search.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C83F6135698B5E1FBF9D8B5 /* Pods_500px_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,8 @@
 				4AA40A091FCDE3DD00F2DD7E /* 500px Search */,
 				4AA40A1C1FCDE3DD00F2DD7E /* 500px SearchTests */,
 				4AA40A081FCDE3DD00F2DD7E /* Products */,
+				6ED6C93D44352DC604BC076B /* Pods */,
+				BA2F287805B81F7E9AE02A5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +102,23 @@
 			path = "500px SearchTests";
 			sourceTree = "<group>";
 		};
+		6ED6C93D44352DC604BC076B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46C86E23CA17E138AE66B215 /* Pods-500px Search.debug.xcconfig */,
+				4E09B14AB50F59B8AD42BF6E /* Pods-500px Search.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA2F287805B81F7E9AE02A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19750737F91B2ADE35CFCEBA /* Pods_500px_Search.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA40A221FCDE3DD00F2DD7E /* Build configuration list for PBXNativeTarget "500px Search" */;
 			buildPhases = (
+				08A4B4B4AE99B54384B776B4 /* [CP] Check Pods Manifest.lock */,
 				4AA40A031FCDE3DD00F2DD7E /* Sources */,
 				4AA40A041FCDE3DD00F2DD7E /* Frameworks */,
 				4AA40A051FCDE3DD00F2DD7E /* Resources */,
+				A130779A3D2E646DFF558376 /* [CP] Embed Pods Frameworks */,
+				EF80D3C850E0D801E1E35620 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A4B4B4AE99B54384B776B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-500px Search-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A130779A3D2E646DFF558376 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-500px Search/Pods-500px Search-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-500px Search/Pods-500px Search-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF80D3C850E0D801E1E35620 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-500px Search/Pods-500px Search-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AA40A031FCDE3DD00F2DD7E /* Sources */ = {
@@ -340,6 +429,7 @@
 		};
 		4AA40A231FCDE3DD00F2DD7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C86E23CA17E138AE66B215 /* Pods-500px Search.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "500px Search/_00px_Search.entitlements";
@@ -356,6 +446,7 @@
 		};
 		4AA40A241FCDE3DD00F2DD7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E09B14AB50F59B8AD42BF6E /* Pods-500px Search.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "500px Search/_00px_Search.entitlements";

@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :macos, '10.12'
+use_frameworks!
+
+def all_pods
+pod 'Alamofire', '~> 4.5'
+pod 'BrightFutures', '~> 6.0'
+pod 'SwiftyJSON'
+pod 'SDWebImage', '~> 4.0'
+end
+
+target '500px Search' do
+all_pods
+end
