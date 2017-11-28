@@ -14,6 +14,7 @@
 		4AA40A1E1FCDE3DD00F2DD7E /* _00px_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A1D1FCDE3DD00F2DD7E /* _00px_SearchTests.swift */; };
 		4AA40A2A1FCDE5CD00F2DD7E /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A291FCDE5CD00F2DD7E /* PhotosService.swift */; };
 		4AA40A2D1FCDE5FD00F2DD7E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A2C1FCDE5FD00F2DD7E /* Photo.swift */; };
+		4AA40A301FCDE9DC00F2DD7E /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */; };
 		9C83F6135698B5E1FBF9D8B5 /* Pods_500px_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19750737F91B2ADE35CFCEBA /* Pods_500px_Search.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		4AA40A1F1FCDE3DD00F2DD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA40A291FCDE5CD00F2DD7E /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		4AA40A2C1FCDE5FD00F2DD7E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		4E09B14AB50F59B8AD42BF6E /* Pods-500px Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-500px Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-500px Search/Pods-500px Search.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		4AA40A091FCDE3DD00F2DD7E /* 500px Search */ = {
 			isa = PBXGroup;
 			children = (
+				4AA40A2E1FCDE9CD00F2DD7E /* View Models */,
 				4AA40A2B1FCDE5F500F2DD7E /* Models */,
 				4AA40A281FCDE5B600F2DD7E /* Service */,
 				4AA40A0A1FCDE3DD00F2DD7E /* AppDelegate.swift */,
@@ -122,6 +125,14 @@
 				4AA40A2C1FCDE5FD00F2DD7E /* Photo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4AA40A2E1FCDE9CD00F2DD7E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		6ED6C93D44352DC604BC076B /* Pods */ = {
@@ -312,6 +323,7 @@
 				4AA40A0D1FCDE3DD00F2DD7E /* ViewController.swift in Sources */,
 				4AA40A0B1FCDE3DD00F2DD7E /* AppDelegate.swift in Sources */,
 				4AA40A2A1FCDE5CD00F2DD7E /* PhotosService.swift in Sources */,
+				4AA40A301FCDE9DC00F2DD7E /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
