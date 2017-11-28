@@ -710,34 +710,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="esB-fV-pun">
-                                <rect key="frame" x="-3" y="-3" width="486" height="276"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="c67-D4-cP7"/>
-                            </imageView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-dJ-fHd">
-                                <rect key="frame" x="200" y="25" width="81" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8aY-dS-0vv">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrd-xc-vyc">
+                                <rect key="frame" x="0.0" y="248" width="480" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="T4C-6B-8S6"/>
+                                </constraints>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search For Photo" usesSingleLineMode="YES" bezelStyle="round" sendsWholeSearchString="YES" maximumRecents="10" recentsAutosaveName="Search Field" id="BWX-n5-ZvD">
                                     <font key="font" metaFont="system"/>
-                                </buttonCell>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <outlet property="searchMenuTemplate" destination="T2a-QA-D2W" id="GF6-eM-K4v"/>
+                                    </connections>
+                                </searchFieldCell>
                                 <connections>
-                                    <action selector="buttonPushed:" target="XfG-lQ-9wD" id="ZPB-y1-heo"/>
+                                    <action selector="updateSearch:" target="XfG-lQ-9wD" id="sdQ-nc-1q6"/>
                                 </connections>
-                            </button>
+                            </searchField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RMP-bE-hcZ">
+                                <rect key="frame" x="-3" y="-3" width="486" height="254"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="7ut-gl-Vbt"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="esB-fV-pun" secondAttribute="trailing" id="TGo-6e-y0z"/>
-                            <constraint firstAttribute="bottom" secondItem="esB-fV-pun" secondAttribute="bottom" id="bGp-7L-NKR"/>
-                            <constraint firstItem="esB-fV-pun" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="mCs-QO-Wfh"/>
-                            <constraint firstItem="esB-fV-pun" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="u7z-J7-TNA"/>
+                            <constraint firstItem="Mrd-xc-vyc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="JVs-xu-zhz"/>
+                            <constraint firstItem="RMP-bE-hcZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="UIJ-Pw-sqi"/>
+                            <constraint firstAttribute="trailing" secondItem="Mrd-xc-vyc" secondAttribute="trailing" id="Xh8-ex-EWN"/>
+                            <constraint firstItem="Mrd-xc-vyc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="c7T-xS-qiz"/>
+                            <constraint firstAttribute="trailing" secondItem="RMP-bE-hcZ" secondAttribute="trailing" id="cdf-Ku-QOa"/>
+                            <constraint firstItem="RMP-bE-hcZ" firstAttribute="top" secondItem="Mrd-xc-vyc" secondAttribute="bottom" id="jOp-mi-VXR"/>
+                            <constraint firstAttribute="bottom" secondItem="RMP-bE-hcZ" secondAttribute="bottom" id="ljp-T9-6sd"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="esB-fV-pun" id="Pe2-Me-uRb"/>
+                        <outlet property="imageView" destination="RMP-bE-hcZ" id="V2P-pR-hSc"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu title="Search Menu" id="T2a-QA-D2W">
+                    <items>
+                        <menuItem title="Recent Searches" tag="1001" id="lbP-po-Wgu">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>

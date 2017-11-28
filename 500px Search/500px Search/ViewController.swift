@@ -25,8 +25,13 @@ class ViewController: NSViewController {
     }
 
     @IBAction func buttonPushed(_ sender: Any) {
+
+    }
+
+    @IBAction func updateSearch(_ sender: NSSearchField) {
+        let searchTerm = sender.stringValue
         let service = PhotosService()
-        service.searchPhotos("Chicago") { (photos, _) in
+        service.searchPhotos(searchTerm) { (photos, _) in
             if let photo = photos?.first {
                 self.imageView.sd_setImage(with: photo.url, completed: nil)
             }
@@ -34,4 +39,6 @@ class ViewController: NSViewController {
     }
 
 }
+
+
 
