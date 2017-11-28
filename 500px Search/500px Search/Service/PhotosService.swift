@@ -12,3 +12,9 @@ class PhotosService {
 
     
 }
+
+extension PhotosService {
+    private enum Constants {
+        static let ConsumerKey = "xHkW9aeTnoYk4k1lUYicCjbKY9VXjYOWxE3OsBt8"
+    }
+}
