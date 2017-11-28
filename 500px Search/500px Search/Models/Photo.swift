@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class Photo {
 
-    var id: String?
+    var id: Int?
     var name: String?
     var description: String?
     var camera: String?
@@ -25,7 +25,7 @@ class Photo {
     var url: URL?
 
     init(json: JSON) {
-        self.id = json["id"].string
+        self.id = json["id"].int
         self.name = json["name"].string
         self.description = json["description"].string
         self.camera = json["camera"].string
@@ -43,8 +43,8 @@ class Photo {
             self.dateTaken = dateFormatter.date(from: dateString)
         }
 
-        if let images = json["images"].dictionary, let urlString = images["url"]?.string {
-            self.url = URL(string: urlString)
+        if let images = json["image_url"].string {
+            self.url = URL(string: images)
         }
     }
 }

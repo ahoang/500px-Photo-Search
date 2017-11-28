@@ -7,9 +7,11 @@
 //
 
 import Cocoa
+import SDWebImage
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var imageView: NSImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,14 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func buttonPushed(_ sender: Any) {
+        let service = PhotosService()
+        service.searchPhotos("Chicago") { (photos, _) in
+            if let photo = photos?.first {
+                self.imageView.sd_setImage(with: photo.url, completed: nil)
+            }
+        }
+    }
 
 }
 
