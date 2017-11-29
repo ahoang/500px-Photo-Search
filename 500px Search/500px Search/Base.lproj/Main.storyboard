@@ -113,7 +113,7 @@
                                     <rect key="frame" x="1" y="0.0" width="478" height="247"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Tf4-3E-HsA" viewBased="YES" indentationPerLevel="16" outlineTableColumn="GpK-e2-FxJ" id="l40-i8-Edv">
+                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Tf4-3E-HsA" viewBased="YES" indentationPerLevel="16" outlineTableColumn="GpK-e2-FxJ" id="l40-i8-Edv">
                                             <rect key="frame" x="0.0" y="0.0" width="478" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
