@@ -80,8 +80,6 @@ extension ViewController : NSOutlineViewDelegate {
                 view?.textField?.stringValue = groupViewModel.title
             } else if let photoViewModel = item as? PhotoViewModel {
                 view = outlineView.makeView(withIdentifier: NSUserInterfaceItemIdentifier("PhotoCell"), owner: self) as? NSTableCellView
-                view?.imageView?.layer?.contentsGravity = kCAGravityResizeAspectFill
-                view?.imageView?.wantsLayer = true
                 view?.imageView?.sd_setImage(with: photoViewModel.url, completed: nil)
             }
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier("ShutterColumn"), let photoViewMOdel = item as? PhotoViewModel, let shutterSpeed = photoViewMOdel.shutter {
