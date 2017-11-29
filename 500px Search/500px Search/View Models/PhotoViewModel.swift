@@ -71,6 +71,18 @@ class PhotoViewModel {
         }
     }
 
+    var shutter: String? {
+        get {
+            return photo.shutterSpeed
+        }
+    }
+
+    var iso: String? {
+        get {
+            return photo.iso
+        }
+    }
+
     init(photo: Photo) {
         self.photo = photo
     }

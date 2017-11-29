@@ -15,6 +15,8 @@
 		4AA40A2A1FCDE5CD00F2DD7E /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A291FCDE5CD00F2DD7E /* PhotosService.swift */; };
 		4AA40A2D1FCDE5FD00F2DD7E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A2C1FCDE5FD00F2DD7E /* Photo.swift */; };
 		4AA40A301FCDE9DC00F2DD7E /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */; };
+		4AA40A321FCE495100F2DD7E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A311FCE495100F2DD7E /* FeedViewModel.swift */; };
+		4AA40A341FCE496900F2DD7E /* PhotosGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA40A331FCE496900F2DD7E /* PhotosGroupViewModel.swift */; };
 		9C83F6135698B5E1FBF9D8B5 /* Pods_500px_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19750737F91B2ADE35CFCEBA /* Pods_500px_Search.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		4AA40A291FCDE5CD00F2DD7E /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		4AA40A2C1FCDE5FD00F2DD7E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		4AA40A311FCE495100F2DD7E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		4AA40A331FCE496900F2DD7E /* PhotosGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGroupViewModel.swift; sourceTree = "<group>"; };
 		4E09B14AB50F59B8AD42BF6E /* Pods-500px Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-500px Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-500px Search/Pods-500px Search.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				4AA40A2F1FCDE9DC00F2DD7E /* PhotoViewModel.swift */,
+				4AA40A311FCE495100F2DD7E /* FeedViewModel.swift */,
+				4AA40A331FCE496900F2DD7E /* PhotosGroupViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -319,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA40A341FCE496900F2DD7E /* PhotosGroupViewModel.swift in Sources */,
 				4AA40A2D1FCDE5FD00F2DD7E /* Photo.swift in Sources */,
 				4AA40A0D1FCDE3DD00F2DD7E /* ViewController.swift in Sources */,
+				4AA40A321FCE495100F2DD7E /* FeedViewModel.swift in Sources */,
 				4AA40A0B1FCDE3DD00F2DD7E /* AppDelegate.swift in Sources */,
 				4AA40A2A1FCDE5CD00F2DD7E /* PhotosService.swift in Sources */,
 				4AA40A301FCDE9DC00F2DD7E /* PhotoViewModel.swift in Sources */,
